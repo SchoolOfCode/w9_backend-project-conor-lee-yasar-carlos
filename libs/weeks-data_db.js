@@ -2,7 +2,7 @@ const db_weeks = {
   week1: [
     {
       day: 1,
-      resouces: [
+      resources: [
         {
           id: 301,
           topic: 'HTML basics',
@@ -23,7 +23,7 @@ const db_weeks = {
     },
     {
       day: 2,
-      resouces: [
+      resources: [
         {
           id: 702,
           topic: 'CSS, basics',
@@ -45,7 +45,7 @@ const db_weeks = {
     },
     {
       day: 3,
-      resouces: [
+      resources: [
         {
           id: 803,
           topic: 'Javascript intro',
@@ -62,7 +62,7 @@ const db_weeks = {
     },
     {
       day: 4,
-      resouces: [
+      resources: [
         {
           id: 904,
           topic: 'javascript intro part 2',
@@ -84,7 +84,7 @@ const db_weeks = {
     },
     {
       day: 5,
-      resouces: [
+      resources: [
         {
           id: 205,
           topic: 'javascript continued',
@@ -108,7 +108,7 @@ const db_weeks = {
   week2: [
     {
       day: 1,
-      resouces: [
+      resources: [
         {
           id: 5406,
           topic: 'intro to node',
@@ -129,7 +129,7 @@ const db_weeks = {
     },
     {
       day: 2,
-      resouces: [
+      resources: [
         {
           id: 6507,
           topic: 'express',
@@ -146,7 +146,7 @@ const db_weeks = {
     },
     {
       day: 3,
-      resouces: [
+      resources: [
         {
           id: 508,
           topic: 'databases',
@@ -163,7 +163,7 @@ const db_weeks = {
     },
     {
       day: 4,
-      resouces: [
+      resources: [
         {
           id: 409,
           topic: 'Heroku',
@@ -185,7 +185,7 @@ const db_weeks = {
     },
     {
       day: 5,
-      resouces: [
+      resources: [
         {
           id: 201,
           topic: 'Restful Apis',
