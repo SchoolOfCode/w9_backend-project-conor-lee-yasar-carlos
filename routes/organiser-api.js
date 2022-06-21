@@ -2,7 +2,8 @@ import express from 'express';
 import {
   getWeekData,
   createTaskComment,
-  updateTaskComment
+  updateTaskComment,
+  updateTaskMeta
 } from '../models/organiser-api.js';
 
 
@@ -67,6 +68,25 @@ organiserRouter.patch('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
     res.json({
       success: false,
       payload: 'Unable to update the task comment'
+    });
+  }
+});
+
+// listen for PATCH request to update a task metadata
+organiserRouter.patch('/:userID/:weekID/:day/task/:taskID', (req, res) => {
+  // object with success response
+  const response = updateTaskMeta({...req.params, ...req.body})
+
+  // let end user know the sucess of update the task meta
+  if (response.success) {
+    res.json({
+      sucess: true,
+      payload: 'Task metadata updated successfully'
+    });
+  }else{
+    res.json({
+      success: false,
+      payload: 'Unable to update the task metadata'
     });
   }
 });
