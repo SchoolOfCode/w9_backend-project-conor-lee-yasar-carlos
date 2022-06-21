@@ -1,4 +1,4 @@
-export const weeks = {
+const weeks = {
   week1: [
     {
       day: 1,
@@ -207,3 +207,5 @@ export const weeks = {
     }
   ]
 }
+
+export default weeks;

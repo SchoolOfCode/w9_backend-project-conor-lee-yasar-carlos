@@ -1,5 +1,8 @@
 import express from 'express';
-import { getWeekData } from '../models/organiser-api.js';
+import {
+  getWeekData,
+  createTaskComment,
+} from '../models/organiser-api.js';
 
 
 // create this said router
@@ -18,15 +21,26 @@ organiserRouter.get('/:userID/weeks/:weekID', (req, res) => {
 
 // listen for post requests
 organiserRouter.post('/:userID/weeks/:weekID/:day/:taskID', (req, res) => {
-  const userID = req.params.userID;
-  const weekID = req.params.weekID;
-  const taskID = req.params.taskID;
-  const dayID = req.params.day;
+  const userId = req.params.userID;
+  const week = req.params.weekID;
+  const taskId = Number(req.params.taskID);
+  const day = req.params.day;
+  const comment = req.body.comment;
 
-  res.json({
-    success: true,
-    payload: `Add a comment to week ${weekID} day ${dayID} from user ${userID} to task ${taskID}`
-  })
+  const response = createTaskComment(userId, week, day, taskId, comment);
+  
+  if (response.success) {
+    res.json({
+      success: true,
+      payload: 'Comments successfully added'
+    });
+  }else{
+    res.json({
+      success: false,
+      payload: 'Task not found, unable to add comment'
+    });
+  }
+
 });
 
 export default organiserRouter;

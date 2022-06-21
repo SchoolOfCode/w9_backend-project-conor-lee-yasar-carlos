@@ -5,6 +5,8 @@ import organiserRouter from './routes/organiser-api.js'
 const PORT = process.env.port || 3000;
 const app = express();
 
+// filter the response stream
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.json({
