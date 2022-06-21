@@ -4,7 +4,7 @@ export const weeks = {
       day: 1,
       resouces: [
         {
-          id: 01,
+          id: 301,
           topic: 'HTML basics',
           url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU'
         
@@ -25,7 +25,7 @@ export const weeks = {
       day: 2,
       resouces: [
         {
-          id: 02,
+          id: 702,
           topic: 'CSS, basics',
           url: 'https://www.youtube.com/watch?v=1PnVor36_40'
         }
@@ -47,7 +47,7 @@ export const weeks = {
       day: 3,
       resouces: [
         {
-          id: 03,
+          id: 803,
           topic: 'Javascript intro',
           url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s'
         }
@@ -64,7 +64,7 @@ export const weeks = {
       day: 4,
       resouces: [
         {
-          id: 04,
+          id: 904,
           topic: 'javascript intro part 2',
           url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s'
         }
@@ -86,7 +86,7 @@ export const weeks = {
       day: 5,
       resouces: [
         {
-          id: 05,
+          id: 205,
           topic: 'javascript continued',
           url: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch'
         }
@@ -104,107 +104,106 @@ export const weeks = {
         }
       ]
     },
-    week2: [
-      {
-        day: 1,
-        resouces: [
-          {
-            id: 06,
-            topic: 'intro to node',
-            url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s'
-          
-          }
-        ],
-        list: [
-          {
-            id: 106,
-            topic: 'node modules'
-         },
-         {
-          id: 1062,
-          topic: 'http modules'
-       }
-        ]
-      },
-      {
-        day: 2,
-        resouces: [
-          {
-            id: 07,
-            topic: 'express',
-            url: 'https://www.section.io/engineering-education/express/'
-          }
-        ],
-        list: [
-          {
-            id: 107,
-            topic: 'request handlers'
-            
-          }
-        ]
-      },
-      {
-        day: 3,
-        resouces: [
-          {
-            id: 08,
-            topic: 'databases',
-            url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM'
-          }
-        ],
-        list: [
-          {
-            id: 108,
-            topic:' postgres'
-            
-          }
-        ]
-      },
-      {
-        day: 4,
-        resouces: [
-          {
-            id: 09,
-            topic: 'Heroku',
-            url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw'
-          }
-        ],
-        list: [
-          {
-            id: 109,
-            topic: 'relational databases'
-            
-          },
-          {
-            id: 1092,
-            topic: 'non relational databases'
-            
-          }
-        ]
-      },
-      {
-        day: 5,
-        resouces: [
-          {
-            id: 001,
-            topic: 'Restful Apis',
-            url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk'
-          }
-        ],
-        list: [
-          {
-            id: 1001,
-            topic: 'CRUD operations'
-            
-          },
-          {
-            id: 10012,
-            topic: 'scaling operations'
-            
-          }
-        ]
+  ],
+  week2: [
+    {
+      day: 1,
+      resouces: [
+        {
+          id: 5406,
+          topic: 'intro to node',
+          url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s'
+        
+        }
+      ],
+      list: [
+        {
+          id: 106,
+          topic: 'node modules'
+        },
+        {
+        id: 1062,
+        topic: 'http modules'
       }
-    ]
-    
+      ]
+    },
+    {
+      day: 2,
+      resouces: [
+        {
+          id: 6507,
+          topic: 'express',
+          url: 'https://www.section.io/engineering-education/express/'
+        }
+      ],
+      list: [
+        {
+          id: 107,
+          topic: 'request handlers'
+          
+        }
+      ]
+    },
+    {
+      day: 3,
+      resouces: [
+        {
+          id: 508,
+          topic: 'databases',
+          url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM'
+        }
+      ],
+      list: [
+        {
+          id: 108,
+          topic:' postgres'
+          
+        }
+      ]
+    },
+    {
+      day: 4,
+      resouces: [
+        {
+          id: 409,
+          topic: 'Heroku',
+          url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw'
+        }
+      ],
+      list: [
+        {
+          id: 109,
+          topic: 'relational databases'
+          
+        },
+        {
+          id: 1092,
+          topic: 'non relational databases'
+          
+        }
+      ]
+    },
+    {
+      day: 5,
+      resouces: [
+        {
+          id: 201,
+          topic: 'Restful Apis',
+          url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk'
+        }
+      ],
+      list: [
+        {
+          id: 1001,
+          topic: 'CRUD operations'
+          
+        },
+        {
+          id: 10012,
+          topic: 'scaling operations'
+          
+        }
+      ]
+    }
   ]
 }

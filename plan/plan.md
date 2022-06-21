@@ -44,21 +44,25 @@ The plan to create the backend.
   - export router for the consumption of another ✅
   - listen for GET requests with `/:userID/weeks/:weekID` ✅
   - create and return response object with userID and weekID to make sure it is working ✅
-  - listen for POST request with `/:userID/weeks/:weekID/:day/:taskID`
-  - create and return response object with all the placeholders to make sure it is working
+  - listen for POST request with `/:userID/weeks/:weekID/:day/:taskID` ✅
+  - create and return response object with all the placeholders to make sure it is working ✅
 
-**_STRETCH GOALS IF WE HAVE TIME_**
+## Create models
+
+- create `models` folder ✅
+  - create the `organiser-api.js` file ✅
+    - import the libs ✅
+    - write the functions to catch GET all the data for the week number ✅
+    - write the function to POST the comment to the database ✅
+- inside `routes/organiser-api.js` ✅
+  - import the model functions ✅
+  - in `/routes/organiser-api.js` the listeners call the models and the reponse objects payload ✅
+
+## STRETCH GOALS IF WE HAVE TIME
+
+_Add DELETE and PATCH_
 
 - listen for PATCH request with `/:userID/weeks/:weekID/:day`
 - create and return response object with all the placeholders to make sure it is working
 - listen for DELETE request with `/:userID/weeks/:weekID/:day/:taskID`
 - create and return response object with all the placeholders to make sure it is working
-
-## Create models
-
-- create `models` folder
-  - create the `organiser-api.js` file
-  - write the functions to catch GET, POST, PATCH and DELETE to return a dummy payload for testing
-- inside `routes/organiser-api.js`
-  - import the model functions
-  - inside the listeners call the models and the reponse objects payload to test
