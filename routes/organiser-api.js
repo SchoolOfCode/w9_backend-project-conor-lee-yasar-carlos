@@ -41,14 +41,8 @@ organiserRouter.post('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
 
 // listen for PATCH request to update the comment for a task
 organiserRouter.patch('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
-  const userId = req.params.userID;
-  const week = req.params.weekID;
-  const day = req.params.day;
-  const taskId = Number(req.params.taskID);
-  const comment = req.body.comment;
-
   // object with success response
-  const response = updateTaskComment(userId, week, day, taskId, comment);
+  const response = updateTaskComment({...req.params, ...req.body});
 
   // let the end user know the sucess of the patch
   if (response.success) {
