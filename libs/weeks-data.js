@@ -1,211 +1,285 @@
 const weeks = {
-  week1: [
-    {
-      day: 1,
-      resouces: [
-        {
-          id: 301,
-          topic: 'HTML basics',
-          url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU'
-        
-        }
-      ],
-      list: [
-        {
-          id: 101,
-          topic: 'HTML, elements and attributes '
-       },
-       {
-        id: 1012,
-        topic: 'HTML, class and ids'
-     }
-      ]
-    },
-    {
-      day: 2,
-      resouces: [
-        {
-          id: 702,
-          topic: 'CSS, basics',
-          url: 'https://www.youtube.com/watch?v=1PnVor36_40'
-        }
-      ],
-      list: [
-        {
-          id: 102,
-          topic: 'CSS syntax and selectors'
+    week1: [
+      {
+        day: 1,
+        resouces: [
+          {
+            id: 301,
+            topic: 'HTML basics',
+            url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU',
+            rating: true
           
-        },
-        {
-          id: 1022,
-          topic: 'backgrounds, borders and margins'
+          }
+        ],
+        list: [
+          {
+            id: 101,
+            topic: 'HTML, elements and attributes ',
+            weekend:true,
+            completed: true,
+            rating: 0
+         },
+         {
+          id: 1012,
+          topic: 'HTML, class and ids',
+          weekend: true,
+          completed: true,
+          rating: 0
+       }
+        ]
+      },
+      {
+        day: 2,
+        resouces: [
+          {
+            id: 702,
+            topic: 'CSS, basics',
+            url: 'https://www.youtube.com/watch?v=1PnVor36_40',
+            rating: true
           
-        }
-      ]
-    },
-    {
-      day: 3,
-      resouces: [
-        {
-          id: 803,
-          topic: 'Javascript intro',
-          url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s'
-        }
-      ],
-      list: [
-        {
-          id: 103,
-          topic: 'data types and variables',
+          }
+        ],
+        list: [
+          {
+            id: 102,
+            topic: 'CSS syntax and selectors',
+            weekend: true,
+            completed: true,
+            rating: 0
+            
+          },
+          {
+            id: 1022,
+            topic: 'backgrounds, borders and margins',
+            weekend: true,
+            completed: false,
+            rating: 0
+            
+          }
+        ]
+      },
+      {
+        day: 3,
+        resouces: [
+          {
+            id: 803,
+            topic: 'Javascript intro',
+            url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s',
+            rating: false
           
-        }
-      ] 
-    },
-    {
-      day: 4,
-      resouces: [
-        {
-          id: 904,
-          topic: 'javascript intro part 2',
-          url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s'
-        }
-      ],
-      list: [
-        {
-          id: 104,
-          topic: 'objects and arrays',
+          }
+        ],
+        list: [
+          {
+            id: 103,
+            topic: 'data types and variables',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            comments:"It was too technical. i would have liked a step by step guide"
+            
+          }
+        ] 
+      },
+      {
+        day: 4,
+        resouces: [
+          {
+            id: 904,
+            topic: 'javascript intro part 2',
+            url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s',
+            rating: false
           
-        },
-        {
-          id: 1042,
-          topic: 'loops and if statements',
+          }
+        ],
+        list: [
+          {
+            id: 104,
+            topic: 'objects and arrays',
+            weekend:false,
+            completed:false,
+            rating: 0,
+            
+          },
+          {
+            id: 1042,
+            topic: 'loops and if statements',
+            weekend:false,
+            completed:true,
+            rating: 0,
+            
+          }
+        ]
+      },
+      {
+        day: 5,
+        resouces: [
+          {
+            id: 205,
+            topic: 'javascript continued',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch',
+            rating: true
           
-        }
-      ]
-    },
-    {
-      day: 5,
-      resouces: [
-        {
-          id: 205,
-          topic: 'javascript continued',
-          url: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch'
-        }
-      ],
-      list: [
-        {
-          id: 105,
-          topic: 'fetch',
+          }
+        ],
+        list: [
+          {
+            id: 105,
+            topic: 'fetch',
+            weekend:false,
+            completed:true,
+            rating: 0,
+            
+          },
+          {
+            id: 1052,
+            topic: 'change HTML elements',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            comments:"I would have prefered a practical"
+            
+          }
+        ]
+      },
+    ],
+    week2: [
+      {
+        day: 1,
+        resouces: [
+          {
+            id: 5406,
+            topic: 'intro to node',
+            url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s',
+            rating: true
           
-        },
-        {
-          id: 1052,
-          topic: 'change HTML elements',
           
+          }
+        ],
+        list: [
+          {
+            id: 106,
+            topic: 'node modules',
+            weekend:true,
+            completed:true,
+            rating: 0,
+          },
+          {
+          id: 1062,
+          topic: 'http modules',
+          weekend:true,
+          completed:true,
+          rating: 0,
         }
-      ]
-    },
-  ],
-  week2: [
-    {
-      day: 1,
-      resouces: [
-        {
-          id: 5406,
-          topic: 'intro to node',
-          url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s'
-        
-        }
-      ],
-      list: [
-        {
-          id: 106,
-          topic: 'node modules'
-        },
-        {
-        id: 1062,
-        topic: 'http modules'
+        ]
+      },
+      {
+        day: 2,
+        resouces: [
+          {
+            id: 6507,
+            topic: 'express',
+            url: 'https://www.section.io/engineering-education/express/',
+            rating: true
+          
+          }
+        ],
+        list: [
+          {
+            id: 107,
+            topic: 'request handlers',
+            weekend:true,
+            completed:false,
+            rating: 0,
+            
+          }
+        ]
+      },
+      {
+        day: 3,
+        resouces: [
+          {
+            id: 508,
+            topic: 'databases',
+            url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM',
+            rating: true
+          
+          }
+        ],
+        list: [
+          {
+            id: 108,
+            topic:' postgres',
+            weekend:true,
+            completed:false,
+            rating: 0,
+            
+          }
+        ]
+      },
+      {
+        day: 4,
+        resouces: [
+          {
+            id: 409,
+            topic: 'Heroku',
+            url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw',
+            rating: true
+          
+          }
+        ],
+        list: [
+          {
+            id: 109,
+            topic: 'relational databases',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            comments:"hard to follow"
+            
+            
+          },
+          {
+            id: 1092,
+            topic: 'non relational databases',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            
+            
+          }
+        ]
+      },
+      {
+        day: 5,
+        resouces: [
+          {
+            id: 201,
+            topic: 'Restful Apis',
+            url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk',
+            rating: true
+          
+          }
+        ],
+        list: [
+          {
+            id: 1001,
+            topic: 'CRUD operations',
+            weekend:true,
+            completed:true,
+           rating: 0,
+            
+          },
+          {
+            id: 10012,
+            topic: 'scaling operations',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            
+          }
+        ]
       }
-      ]
-    },
-    {
-      day: 2,
-      resouces: [
-        {
-          id: 6507,
-          topic: 'express',
-          url: 'https://www.section.io/engineering-education/express/'
-        }
-      ],
-      list: [
-        {
-          id: 107,
-          topic: 'request handlers'
-          
-        }
-      ]
-    },
-    {
-      day: 3,
-      resouces: [
-        {
-          id: 508,
-          topic: 'databases',
-          url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM'
-        }
-      ],
-      list: [
-        {
-          id: 108,
-          topic:' postgres'
-          
-        }
-      ]
-    },
-    {
-      day: 4,
-      resouces: [
-        {
-          id: 409,
-          topic: 'Heroku',
-          url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw'
-        }
-      ],
-      list: [
-        {
-          id: 109,
-          topic: 'relational databases'
-          
-        },
-        {
-          id: 1092,
-          topic: 'non relational databases'
-          
-        }
-      ]
-    },
-    {
-      day: 5,
-      resouces: [
-        {
-          id: 201,
-          topic: 'Restful Apis',
-          url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk'
-        }
-      ],
-      list: [
-        {
-          id: 1001,
-          topic: 'CRUD operations'
-          
-        },
-        {
-          id: 10012,
-          topic: 'scaling operations'
-          
-        }
-      ]
-    }
-  ]
-}
-
-export default weeks;
+    ]
+  }
+  export default weeks
