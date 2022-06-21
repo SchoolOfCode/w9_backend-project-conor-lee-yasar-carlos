@@ -40,7 +40,7 @@ export function updateTaskComment({userID, weekID, day, taskID, comment}) {
   return { success: updated };
 }
 
-// update task metadata
+// PATCH: update task metadata
 export function updateTaskMeta({userId, weekID, day, taskID, weekend, completed, rating}) {
   // tracks if comment was updated
   let updated = false;
@@ -52,6 +52,23 @@ export function updateTaskMeta({userId, weekID, day, taskID, weekend, completed,
       task.weekend = weekend;
       task.completed = completed;
       task.rating = Number(rating);
+      updated = true;
+    }
+  });
+
+  return { success: updated };
+}
+
+// PATCH: update task metadata
+export function updateResourceMeta({userID, weekID, day, resourceID, rating}) {
+  // tracks if comment was updated
+  let updated = false;
+  resourceID = Number(resourceID);
+
+  // loop through tasks to find the matching task
+  weeks[`week${weekID}`][Number(day) - 1].resources.forEach(resource => {
+    if (resource.id === resourceID) {
+      resource.rating = rating;
       updated = true;
     }
   });
