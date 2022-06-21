@@ -9,7 +9,7 @@ import {
 // create this said router
 const organiserRouter = express.Router();
 
-organiserRouter.get('/:userID/weeks/:weekID', (req, res) => {
+organiserRouter.get('/:userID/:weekID', (req, res) => {
   const userID = req.params.userID;
   const weekID = req.params.weekID;
   const data = getWeekData(userID, weekID);
@@ -21,7 +21,7 @@ organiserRouter.get('/:userID/weeks/:weekID', (req, res) => {
 });
 
 // listen for post requests
-organiserRouter.post('/:userID/weeks/:weekID/:day/:taskID', (req, res) => {
+organiserRouter.post('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
   const userId = req.params.userID;
   const week = req.params.weekID;
   const taskId = Number(req.params.taskID);
@@ -46,8 +46,8 @@ organiserRouter.post('/:userID/weeks/:weekID/:day/:taskID', (req, res) => {
 
 });
 
-// listen for PATCH request to update the task for the day
-organiserRouter.patch('/:userID/week/:weekID/day/:day/task/:taskID', (req, res) => {
+// listen for PATCH request to update the comment for a task
+organiserRouter.patch('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
   const userId = req.params.userID;
   const week = req.params.weekID;
   const day = req.params.day;
