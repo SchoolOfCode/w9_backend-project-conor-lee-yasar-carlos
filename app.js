@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import organiserRouter from './routes/organiser-api.js'
 
 
@@ -7,6 +8,8 @@ const app = express();
 
 // filter the response stream
 app.use(express.json());
+// cors will allow communication with the frontend
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.json({
