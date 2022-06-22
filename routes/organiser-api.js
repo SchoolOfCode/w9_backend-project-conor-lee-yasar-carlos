@@ -29,12 +29,12 @@ organiserRouter.post('/:userID/:weekID/:day/resource/:resourceID', (req, res) =>
   if (response.success) {
     res.json({
       success: true,
-      payload: 'Comments successfully added'
+      payload: 'Comment successfully added'
     });
   }else{
     res.json({
       success: false,
-      payload: 'Task not found, unable to add comment'
+      payload: 'Unable to add comment'
     });
   }
 
