@@ -13,12 +13,20 @@ const db_weeks = {
       list: [
         {
           id: 101,
-          topic: 'HTML, elements and attributes '
+          topic: 'HTML elements and attributes'
        },
        {
         id: 1012,
-        topic: 'HTML, class and ids'
-     }
+        topic: 'HTML class and ids'
+     },
+     {
+      id: 1013,
+      topic: 'HTML styles'
+   },
+   {
+    id: 1014,
+    topic: 'HTML links'
+ }
       ]
     },
     {
@@ -40,6 +48,16 @@ const db_weeks = {
           id: 1022,
           topic: 'backgrounds, borders and margins'
           
+        },
+        {
+          id: 1023,
+          topic: 'CSS selectors'
+          
+        },
+        {
+          id: 1023,
+          topic: 'CSS fonts and icons'
+          
         }
       ]
     },
@@ -56,8 +74,19 @@ const db_weeks = {
         {
           id: 103,
           topic: 'data types and variables',
+        },  
+        {
+          id: 1031,
+          topic: 'Javascript operators',
           
-        }
+        },
+        {
+          id: 1032,
+          topic: 'Javascript functions',
+          
+        },  
+      
+
       ] 
     },
     {
@@ -78,6 +107,16 @@ const db_weeks = {
         {
           id: 1042,
           topic: 'loops and if statements',
+          
+        },
+        {
+          id: 1043,
+          topic: 'Javascript modules',
+          
+        },
+        {
+          id: 1044,
+          topic: 'Javascript json',
           
         }
       ]
@@ -100,6 +139,16 @@ const db_weeks = {
         {
           id: 1052,
           topic: 'change HTML elements',
+          
+        },
+        {
+          id: 1052,
+          topic: 'Javascript classes',
+          
+        },
+        {
+          id: 1054,
+          topic: 'Javascript styling guide',
           
         }
       ]
@@ -124,6 +173,18 @@ const db_weeks = {
         {
         id: 1062,
         topic: 'http modules'
+      },
+      {
+        id: 1063,
+        topic: 'node file system'
+      },
+      {
+        id: 1064,
+        topic: 'node npm'
+      },
+      {
+        id: 1065,
+        topic: 'node events'
       }
       ]
     },
@@ -158,9 +219,29 @@ const db_weeks = {
           id: 108,
           topic:' postgres'
           
-        }
-      ]
-    },
+        },
+        {
+          id: 1081,
+          topic:' create database'
+          
+        },
+        {
+          id: 1083,
+          topic:' drop table'
+          
+        },
+        {
+          id: 1083,
+          topic:'create table'
+          
+        },
+      {
+        id: 1084,
+        topic:'alter table'
+        
+      }
+    ]
+  },
     {
       day: 4,
       resources: [
@@ -179,6 +260,11 @@ const db_weeks = {
         {
           id: 1092,
           topic: 'non relational databases'
+          
+        },
+        {
+          id: 1093,
+          topic: 'heroku'
           
         }
       ]
@@ -201,6 +287,11 @@ const db_weeks = {
         {
           id: 10012,
           topic: 'scaling operations'
+          
+        },
+        {
+          id: 10013,
+          topic: 'RESTful methods'
           
         }
       ]

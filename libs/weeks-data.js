@@ -25,7 +25,21 @@ const weeks = {
           weekend: true,
           completed: true,
           rating: 0
-       }
+       },
+       {
+        id: 1013,
+        topic: 'HTML, styles',
+        weekend: true,
+        completed: true,
+        rating: 0
+     },
+     {
+      id: 1014,
+      topic: 'HTML, links',
+      weekend: true,
+      completed: true,
+      rating: 0
+   }
         ]
       },
       {
@@ -55,6 +69,22 @@ const weeks = {
             completed: false,
             rating: 0
             
+          },
+          {
+            id: 1023,
+            topic: 'CSS selectors',
+            weekend: true,
+            completed: false,
+            rating: 0
+            
+          },
+          {
+            id: 1024,
+            topic: 'CSS fonts and icons',
+            weekend: true,
+            completed: false,
+            rating: 0
+            
           }
         ]
       },
@@ -73,6 +103,24 @@ const weeks = {
           {
             id: 103,
             topic: 'data types and variables',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            comments:"It was too technical. i would have liked a step by step guide"
+            
+          },
+          {
+            id: 1031,
+            topic: 'Javascript operators',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            comments:"It was too technical. i would have liked a step by step guide"
+            
+          },
+          {
+            id: 1032,
+            topic: 'Javascript functions',
             weekend:true,
             completed:true,
             rating: 0,
@@ -108,6 +156,22 @@ const weeks = {
             completed:true,
             rating: 0,
             
+          },
+          {
+            id: 1043,
+            topic: 'javascript modules',
+            weekend:false,
+            completed:true,
+            rating: 0,
+            
+          },
+          {
+            id: 1044,
+            topic: 'javascript json',
+            weekend:false,
+            completed:true,
+            rating: 0,
+            
           }
         ]
       },
@@ -134,6 +198,24 @@ const weeks = {
           {
             id: 1052,
             topic: 'change HTML elements',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            comments:"I would have prefered a practical"
+            
+          },
+          {
+            id: 1053,
+            topic: 'Javascript classes',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            comments:"I would have prefered a practical"
+            
+          },
+          {
+            id: 1054,
+            topic: 'Javascript styling guide',
             weekend:true,
             completed:true,
             rating: 0,
@@ -167,6 +249,20 @@ const weeks = {
           {
           id: 1062,
           topic: 'http modules',
+          weekend:true,
+          completed:true,
+          rating: 0,
+        },
+        {
+          id: 1063,
+          topic: 'node file system',
+          weekend:true,
+          completed:true,
+          rating: 0,
+        },
+        {
+          id: 1064,
+          topic: 'node npm',
           weekend:true,
           completed:true,
           rating: 0,
@@ -214,6 +310,30 @@ const weeks = {
             completed:false,
             rating: 0,
             
+          },
+          {
+            id: 1081,
+            topic:'create database',
+            weekend:true,
+            completed:false,
+            rating: 0,
+            
+          },
+          {
+            id: 1082,
+            topic:'drop table',
+            weekend:true,
+            completed:false,
+            rating: 0,
+            
+          },
+          {
+            id: 1083,
+            topic:'alter table',
+            weekend:true,
+            completed:false,
+            rating: 0,
+            
           }
         ]
       },
@@ -247,6 +367,15 @@ const weeks = {
             rating: 0,
             
             
+          },
+          {
+            id: 1093,
+            topic: 'heroku',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            
+            
           }
         ]
       },
@@ -273,6 +402,14 @@ const weeks = {
           {
             id: 10012,
             topic: 'scaling operations',
+            weekend:true,
+            completed:true,
+            rating: 0,
+            
+          },
+          {
+            id: 10013,
+            topic: 'RESTful methods',
             weekend:true,
             completed:true,
             rating: 0,
