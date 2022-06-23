@@ -9,19 +9,33 @@ const weeks = {
             url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU',
             rating: true
           
+          },
+          {
+            id: 3301,
+            topic: 'HTML elements',
+            url: 'https://www.w3schools.com/html/html_elements.asp',
+            rating: true
+          
+          },
+          {
+            id: 3401,
+            topic: 'HTML classes',
+            url: 'https://www.w3schools.com/html/html_elements.asp',
+            rating: true
+          
           }
         ],
         list: [
           {
             id: 101,
-            topic: 'HTML, elements and attributes ',
+            topic: 'HTML elements and attributes ',
             weekend:true,
             completed: true,
             rating: 0
          },
          {
           id: 1012,
-          topic: 'HTML, class and ids',
+          topic: 'HTML classes and ids',
           weekend: true,
           completed: true,
           rating: 0
@@ -47,8 +61,22 @@ const weeks = {
         resources: [
           {
             id: 702,
-            topic: 'CSS, basics',
+            topic: 'CSS basics',
             url: 'https://www.youtube.com/watch?v=1PnVor36_40',
+            rating: true
+          
+          },
+          {
+            id: 7102,
+            topic: 'CSS syntax',
+            url: 'https://www.w3schools.com/css/css_syntax.asp',
+            rating: false
+          
+          },
+          {
+            id: 7202,
+            topic: 'CSS borders and margins',
+            url: 'https://www.w3schools.com/css/css_border.asp',
             rating: true
           
           }
@@ -97,6 +125,20 @@ const weeks = {
             url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s',
             rating: false
           
+          },
+          {
+            id: 8103,
+            topic: 'Javascript data types',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures',
+            rating: false
+          
+          },
+          {
+            id: 8203,
+            topic: 'Javascript variables',
+            url: 'https://www.w3schools.com/js/js_variables.asp',
+            rating: true
+          
           }
         ],
         list: [
@@ -137,6 +179,20 @@ const weeks = {
             topic: 'javascript intro part 2',
             url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s',
             rating: false
+          
+          },
+          {
+            id: 9104,
+            topic: 'loops and if statements',
+            url: 'https://www.youtube.com/watch?v=s9wW2PpJsmQ',
+            rating: true
+          
+          },
+          {
+            id: 9204,
+            topic: 'Javascript modules',
+            url: 'https://www.youtube.com/watch?v=cRHQNNcYf6s',
+            rating: true
           
           }
         ],
@@ -183,6 +239,20 @@ const weeks = {
             topic: 'javascript continued',
             url: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch',
             rating: true
+          
+          },
+          {
+            id: 2105,
+            topic: 'javascript classes',
+            url: 'https://www.w3schools.com/js/js_classes.asp',
+            rating: true
+          
+          },
+          {
+            id: 2205,
+            topic: 'javascript styling guide',
+            url: 'https://enlear.academy/5-best-javascript-style-guides-640485e7b630',
+            rating: false
           
           }
         ],
@@ -236,6 +306,22 @@ const weeks = {
             rating: true
           
           
+          },
+          {
+            id: 5506,
+            topic: 'http modules',
+            url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s',
+            rating: true
+          
+          
+          },
+          {
+            id: 5606,
+            topic: 'node file systems',
+            url: 'https://www.youtube.com/watch?v=QkwHP4d01xA',
+            rating: true
+          
+          
           }
         ],
         list: [
@@ -278,6 +364,20 @@ const weeks = {
             url: 'https://www.section.io/engineering-education/express/',
             rating: true
           
+          },
+          {
+            id: 6607,
+            topic: 'request handlers',
+            url: 'https://codeforgeek.com/handle-get-post-request-express-4/',
+            rating: false
+          
+          },
+          {
+            id: 6707,
+            topic: 'postgres',
+            url: 'https://www.youtube.com/watch?v=fZQI7nBu32M&t=348s',
+            rating: true
+          
           }
         ],
         list: [
@@ -299,6 +399,20 @@ const weeks = {
             topic: 'databases',
             url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM',
             rating: true
+          
+          },
+          {
+            id: 5108,
+            topic: 'create table',
+            url: 'https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/',
+            rating: true
+          
+          },
+          {
+            id: 5208,
+            topic: 'alter table',
+            url: 'https://www.postgresql.org/docs/current/sql-altertable.html',
+            rating: false
           
           }
         ],
@@ -346,6 +460,13 @@ const weeks = {
             url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw',
             rating: true
           
+          },
+          {
+            id: 4109,
+            topic: 'relational databases',
+            url: 'https://www.youtube.com/watch?v=OqjJjpjDRLc',
+            rating: true
+          
           }
         ],
         list: [
@@ -386,6 +507,20 @@ const weeks = {
             id: 201,
             topic: 'Restful Apis',
             url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk',
+            rating: true
+          
+          },
+          {
+            id: 2201,
+            topic: 'CRUD operations',
+            url: 'https://www.youtube.com/watch?v=3isdcAEZoq0',
+            rating: true
+          
+          },
+          {
+            id: 2101,
+            topic: 'RESTful methods',
+            url: 'https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/prest/rest_api_methods.html',
             rating: true
           
           }

@@ -8,6 +8,18 @@ const db_weeks = {
           topic: 'HTML basics',
           url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU'
         
+        },
+        {
+          id: 3301,
+          topic: 'HTML elements',
+          url: 'https://www.w3schools.com/html/html_elements.asp'
+        
+        },
+        {
+          id: 3401,
+          topic: 'HTML classes',
+          url: 'https://www.w3schools.com/html/html_elements.asp'
+        
         }
       ],
       list: [
@@ -17,7 +29,7 @@ const db_weeks = {
        },
        {
         id: 1012,
-        topic: 'HTML class and ids'
+        topic: 'HTML classes and ids'
      },
      {
       id: 1013,
@@ -34,8 +46,18 @@ const db_weeks = {
       resources: [
         {
           id: 702,
-          topic: 'CSS, basics',
+          topic: 'CSS basics',
           url: 'https://www.youtube.com/watch?v=1PnVor36_40'
+        },
+        {
+          id: 7102,
+          topic: 'CSS syntax',
+          url: 'https://www.w3schools.com/css/css_syntax.asp'
+        },
+        {
+          id: 7202,
+          topic: 'CSS borders and margins',
+          url: 'https://www.w3schools.com/css/css_border.asp'
         }
       ],
       list: [
@@ -68,6 +90,16 @@ const db_weeks = {
           id: 803,
           topic: 'Javascript intro',
           url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s'
+        },
+        {
+          id: 8103,
+          topic: 'Javascript data types',
+          url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures'
+        },
+        {
+          id: 8203,
+          topic: 'Javascript variables',
+          url: 'https://www.w3schools.com/js/js_variables.asp'
         }
       ],
       list: [
@@ -95,7 +127,23 @@ const db_weeks = {
         {
           id: 904,
           topic: 'javascript intro part 2',
-          url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s'
+          url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s',
+          rating: false
+        
+        },
+        {
+          id: 9104,
+          topic: 'loops and if statements',
+          url: 'https://www.youtube.com/watch?v=s9wW2PpJsmQ',
+          rating: true
+        
+        },
+        {
+          id: 9204,
+          topic: 'javascript modules',
+          url: 'https://www.youtube.com/watch?v=cRHQNNcYf6s',
+          rating: true
+        
         }
       ],
       list: [
@@ -128,6 +176,16 @@ const db_weeks = {
           id: 205,
           topic: 'javascript continued',
           url: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch'
+        },
+        {
+          id: 2105,
+          topic: 'javascript classes',
+          url: 'https://www.w3schools.com/js/js_classes.asp'
+        },
+        {
+          id: 2205,
+          topic: 'javascript styling guide',
+          url: 'https://enlear.academy/5-best-javascript-style-guides-640485e7b630'
         }
       ],
       list: [
@@ -163,6 +221,18 @@ const db_weeks = {
           topic: 'intro to node',
           url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s'
         
+        },
+        {
+          id: 5506,
+          topic: 'http modules',
+          url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s'
+        
+        },
+        {
+          id: 5606,
+          topic: 'node file systems',
+          url: 'https://www.youtube.com/watch?v=QkwHP4d01xA'
+        
         }
       ],
       list: [
@@ -195,6 +265,16 @@ const db_weeks = {
           id: 6507,
           topic: 'express',
           url: 'https://www.section.io/engineering-education/express/'
+        },
+        {
+          id: 6607,
+          topic: 'request handlers',
+          url: 'https://codeforgeek.com/handle-get-post-request-express-4/'
+        },
+        {
+          id: 6707,
+          topic: 'postgres',
+          url: 'https://www.youtube.com/watch?v=fZQI7nBu32M&t=348s'
         }
       ],
       list: [
@@ -212,6 +292,16 @@ const db_weeks = {
           id: 508,
           topic: 'databases',
           url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM'
+        },
+        {
+          id: 5108,
+          topic: 'create table',
+          url: 'https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/'
+        },
+        {
+          id: 5208,
+          topic: 'alter table',
+          url: 'https://www.postgresql.org/docs/current/sql-altertable.html'
         }
       ],
       list: [
@@ -249,6 +339,11 @@ const db_weeks = {
           id: 409,
           topic: 'Heroku',
           url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw'
+        },
+        {
+          id: 4109,
+          topic: 'relational databases',
+          url: 'https://www.youtube.com/watch?v=OqjJjpjDRLc'
         }
       ],
       list: [
@@ -276,6 +371,16 @@ const db_weeks = {
           id: 201,
           topic: 'Restful Apis',
           url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk'
+        },
+        {
+          id: 2101,
+          topic: 'CRUD operations',
+          url: 'https://www.youtube.com/watch?v=3isdcAEZoq0'
+        },
+        {
+          id: 2201,
+          topic: 'RESTful methods',
+          url: 'https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/prest/rest_api_methods.html'
         }
       ],
       list: [
