@@ -7,21 +7,21 @@ const weeks = {
             id: 301,
             topic: 'HTML basics',
             url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU',
-            rating: true
+            rating: false
           
           },
           {
             id: 3301,
             topic: 'HTML elements',
             url: 'https://www.w3schools.com/html/html_elements.asp',
-            rating: true
+            rating: false
           
           },
           {
             id: 3401,
             topic: 'HTML classes',
             url: 'https://www.w3schools.com/html/html_elements.asp',
-            rating: true
+            rating: false
           
           }
         ],
@@ -29,29 +29,29 @@ const weeks = {
           {
             id: 101,
             topic: 'HTML elements and attributes ',
-            weekend:true,
-            completed: true,
+            weekend:false,
+            completed: false,
             rating: 0
          },
          {
           id: 1012,
           topic: 'HTML classes and ids',
           weekend: true,
-          completed: true,
+          completed: false,
           rating: 0
        },
        {
         id: 1013,
         topic: 'HTML, styles',
         weekend: true,
-        completed: true,
+        completed: false,
         rating: 0
      },
      {
       id: 1014,
       topic: 'HTML, links',
       weekend: true,
-      completed: true,
+      completed: false,
       rating: 0
    }
         ]
@@ -63,7 +63,7 @@ const weeks = {
             id: 702,
             topic: 'CSS basics',
             url: 'https://www.youtube.com/watch?v=1PnVor36_40',
-            rating: true
+            rating: false
           
           },
           {
@@ -77,7 +77,7 @@ const weeks = {
             id: 7202,
             topic: 'CSS borders and margins',
             url: 'https://www.w3schools.com/css/css_border.asp',
-            rating: true
+            rating: false
           
           }
         ],
@@ -86,7 +86,7 @@ const weeks = {
             id: 102,
             topic: 'CSS syntax and selectors',
             weekend: true,
-            completed: true,
+            completed: false,
             rating: 0
             
           },
@@ -137,7 +137,7 @@ const weeks = {
             id: 8203,
             topic: 'Javascript variables',
             url: 'https://www.w3schools.com/js/js_variables.asp',
-            rating: true
+            rating: false
           
           }
         ],
@@ -145,7 +145,7 @@ const weeks = {
           {
             id: 103,
             topic: 'data types and variables',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             comments:"It was too technical. i would have liked a step by step guide"
@@ -154,7 +154,7 @@ const weeks = {
           {
             id: 1031,
             topic: 'Javascript operators',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             comments:"It was too technical. i would have liked a step by step guide"
@@ -163,7 +163,7 @@ const weeks = {
           {
             id: 1032,
             topic: 'Javascript functions',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             comments:"It was too technical. i would have liked a step by step guide"
@@ -185,14 +185,14 @@ const weeks = {
             id: 9104,
             topic: 'loops and if statements',
             url: 'https://www.youtube.com/watch?v=s9wW2PpJsmQ',
-            rating: true
+            rating: false
           
           },
           {
             id: 9204,
             topic: 'Javascript modules',
             url: 'https://www.youtube.com/watch?v=cRHQNNcYf6s',
-            rating: true
+            rating: false
           
           }
         ],
@@ -238,14 +238,14 @@ const weeks = {
             id: 205,
             topic: 'javascript continued',
             url: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch',
-            rating: true
+            rating: false
           
           },
           {
             id: 2105,
             topic: 'javascript classes',
             url: 'https://www.w3schools.com/js/js_classes.asp',
-            rating: true
+            rating: false
           
           },
           {
@@ -268,7 +268,7 @@ const weeks = {
           {
             id: 1052,
             topic: 'change HTML elements',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             comments:"I would have prefered a practical"
@@ -277,7 +277,7 @@ const weeks = {
           {
             id: 1053,
             topic: 'Javascript classes',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             comments:"I would have prefered a practical"
@@ -286,7 +286,7 @@ const weeks = {
           {
             id: 1054,
             topic: 'Javascript styling guide',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             comments:"I would have prefered a practical"
@@ -303,7 +303,7 @@ const weeks = {
             id: 5406,
             topic: 'intro to node',
             url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s',
-            rating: true
+            rating: false
           
           
           },
@@ -311,7 +311,7 @@ const weeks = {
             id: 5506,
             topic: 'http modules',
             url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s',
-            rating: true
+            rating: false
           
           
           },
@@ -319,7 +319,7 @@ const weeks = {
             id: 5606,
             topic: 'node file systems',
             url: 'https://www.youtube.com/watch?v=QkwHP4d01xA',
-            rating: true
+            rating: false
           
           
           }
@@ -328,28 +328,28 @@ const weeks = {
           {
             id: 106,
             topic: 'node modules',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
           },
           {
           id: 1062,
           topic: 'http modules',
-          weekend:true,
+          weekend:false,
           completed:true,
           rating: 0,
         },
         {
           id: 1063,
           topic: 'node file system',
-          weekend:true,
+          weekend:false,
           completed:true,
           rating: 0,
         },
         {
           id: 1064,
           topic: 'node npm',
-          weekend:true,
+          weekend:false,
           completed:true,
           rating: 0,
         }
@@ -362,7 +362,7 @@ const weeks = {
             id: 6507,
             topic: 'express',
             url: 'https://www.section.io/engineering-education/express/',
-            rating: true
+            rating: false
           
           },
           {
@@ -376,7 +376,7 @@ const weeks = {
             id: 6707,
             topic: 'postgres',
             url: 'https://www.youtube.com/watch?v=fZQI7nBu32M&t=348s',
-            rating: true
+            rating: false
           
           }
         ],
@@ -384,7 +384,7 @@ const weeks = {
           {
             id: 107,
             topic: 'request handlers',
-            weekend:true,
+            weekend:false,
             completed:false,
             rating: 0,
             
@@ -398,14 +398,14 @@ const weeks = {
             id: 508,
             topic: 'databases',
             url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM',
-            rating: true
+            rating: false
           
           },
           {
             id: 5108,
             topic: 'create table',
             url: 'https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/',
-            rating: true
+            rating: false
           
           },
           {
@@ -420,7 +420,7 @@ const weeks = {
           {
             id: 108,
             topic:' postgres',
-            weekend:true,
+            weekend:false,
             completed:false,
             rating: 0,
             
@@ -428,7 +428,7 @@ const weeks = {
           {
             id: 1081,
             topic:'create database',
-            weekend:true,
+            weekend:false,
             completed:false,
             rating: 0,
             
@@ -436,7 +436,7 @@ const weeks = {
           {
             id: 1082,
             topic:'drop table',
-            weekend:true,
+            weekend:false,
             completed:false,
             rating: 0,
             
@@ -444,7 +444,7 @@ const weeks = {
           {
             id: 1083,
             topic:'alter table',
-            weekend:true,
+            weekend:false,
             completed:false,
             rating: 0,
             
@@ -458,14 +458,14 @@ const weeks = {
             id: 409,
             topic: 'Heroku',
             url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw',
-            rating: true
+            rating: false
           
           },
           {
             id: 4109,
             topic: 'relational databases',
             url: 'https://www.youtube.com/watch?v=OqjJjpjDRLc',
-            rating: true
+            rating: false
           
           }
         ],
@@ -473,7 +473,7 @@ const weeks = {
           {
             id: 109,
             topic: 'relational databases',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             comments:"hard to follow"
@@ -483,7 +483,7 @@ const weeks = {
           {
             id: 1092,
             topic: 'non relational databases',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             
@@ -492,7 +492,7 @@ const weeks = {
           {
             id: 1093,
             topic: 'heroku',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             
@@ -507,21 +507,21 @@ const weeks = {
             id: 201,
             topic: 'Restful Apis',
             url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk',
-            rating: true
+            rating: false
           
           },
           {
             id: 2201,
             topic: 'CRUD operations',
             url: 'https://www.youtube.com/watch?v=3isdcAEZoq0',
-            rating: true
+            rating: false
           
           },
           {
             id: 2101,
             topic: 'RESTful methods',
             url: 'https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/prest/rest_api_methods.html',
-            rating: true
+            rating: false
           
           }
         ],
@@ -529,7 +529,7 @@ const weeks = {
           {
             id: 1001,
             topic: 'CRUD operations',
-            weekend:true,
+            weekend:false,
             completed:true,
            rating: 0,
             
@@ -537,7 +537,7 @@ const weeks = {
           {
             id: 10012,
             topic: 'scaling operations',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             
@@ -545,7 +545,7 @@ const weeks = {
           {
             id: 10013,
             topic: 'RESTful methods',
-            weekend:true,
+            weekend:false,
             completed:true,
             rating: 0,
             
