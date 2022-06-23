@@ -36,21 +36,21 @@ const weeks = {
          {
           id: 1012,
           topic: 'HTML classes and ids',
-          weekend: true,
+          weekend: false,
           completed: false,
           rating: 0
        },
        {
         id: 1013,
         topic: 'HTML, styles',
-        weekend: true,
+        weekend: false,
         completed: false,
         rating: 0
      },
      {
       id: 1014,
       topic: 'HTML, links',
-      weekend: true,
+      weekend: false,
       completed: false,
       rating: 0
    }
@@ -85,7 +85,7 @@ const weeks = {
           {
             id: 102,
             topic: 'CSS syntax and selectors',
-            weekend: true,
+            weekend: false,
             completed: false,
             rating: 0
             
@@ -93,7 +93,7 @@ const weeks = {
           {
             id: 1022,
             topic: 'backgrounds, borders and margins',
-            weekend: true,
+            weekend: false,
             completed: false,
             rating: 0
             
@@ -101,7 +101,7 @@ const weeks = {
           {
             id: 1023,
             topic: 'CSS selectors',
-            weekend: true,
+            weekend: false,
             completed: false,
             rating: 0
             
@@ -109,7 +109,7 @@ const weeks = {
           {
             id: 1024,
             topic: 'CSS fonts and icons',
-            weekend: true,
+            weekend: false,
             completed: false,
             rating: 0
             
@@ -146,7 +146,7 @@ const weeks = {
             id: 103,
             topic: 'data types and variables',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             comments:"It was too technical. i would have liked a step by step guide"
             
@@ -155,7 +155,7 @@ const weeks = {
             id: 1031,
             topic: 'Javascript operators',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             comments:"It was too technical. i would have liked a step by step guide"
             
@@ -164,7 +164,7 @@ const weeks = {
             id: 1032,
             topic: 'Javascript functions',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             comments:"It was too technical. i would have liked a step by step guide"
             
@@ -209,7 +209,7 @@ const weeks = {
             id: 1042,
             topic: 'loops and if statements',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
           },
@@ -217,7 +217,7 @@ const weeks = {
             id: 1043,
             topic: 'javascript modules',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
           },
@@ -225,7 +225,7 @@ const weeks = {
             id: 1044,
             topic: 'javascript json',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
           }
@@ -261,7 +261,7 @@ const weeks = {
             id: 105,
             topic: 'fetch',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
           },
@@ -269,7 +269,7 @@ const weeks = {
             id: 1052,
             topic: 'change HTML elements',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             comments:"I would have prefered a practical"
             
@@ -278,7 +278,7 @@ const weeks = {
             id: 1053,
             topic: 'Javascript classes',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             comments:"I would have prefered a practical"
             
@@ -287,7 +287,7 @@ const weeks = {
             id: 1054,
             topic: 'Javascript styling guide',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             comments:"I would have prefered a practical"
             
@@ -329,28 +329,28 @@ const weeks = {
             id: 106,
             topic: 'node modules',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
           },
           {
           id: 1062,
           topic: 'http modules',
           weekend:false,
-          completed:true,
+          completed: false,
           rating: 0,
         },
         {
           id: 1063,
           topic: 'node file system',
           weekend:false,
-          completed:true,
+          completed: false,
           rating: 0,
         },
         {
           id: 1064,
           topic: 'node npm',
           weekend:false,
-          completed:true,
+          completed: false,
           rating: 0,
         }
         ]
@@ -474,7 +474,7 @@ const weeks = {
             id: 109,
             topic: 'relational databases',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             comments:"hard to follow"
             
@@ -484,7 +484,7 @@ const weeks = {
             id: 1092,
             topic: 'non relational databases',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
             
@@ -493,7 +493,7 @@ const weeks = {
             id: 1093,
             topic: 'heroku',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
             
@@ -530,7 +530,7 @@ const weeks = {
             id: 1001,
             topic: 'CRUD operations',
             weekend:false,
-            completed:true,
+            completed: false,
            rating: 0,
             
           },
@@ -538,7 +538,7 @@ const weeks = {
             id: 10012,
             topic: 'scaling operations',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
           },
@@ -546,7 +546,7 @@ const weeks = {
             id: 10013,
             topic: 'RESTful methods',
             weekend:false,
-            completed:true,
+            completed: false,
             rating: 0,
             
           }
