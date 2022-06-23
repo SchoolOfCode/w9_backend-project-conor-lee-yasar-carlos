@@ -85,9 +85,15 @@ const weeks = {
           {
             id: 102,
             topic: 'CSS syntax and selectors',
+<<<<<<< Updated upstream
             weekend: false,
             completed: false,
             rating: 0
+=======
+            weekend: true,
+            completed: true,
+            rating: 2
+>>>>>>> Stashed changes
             
           },
           {
