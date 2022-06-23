@@ -8,6 +8,12 @@ The tables we will use to build the database
 | ------ | ------ | ------ | --------- | --------- |
 | int    | int    | int    | boolean   | boolean   |
 
+## ResourceUser table
+
+| ResourceId | UserId | Rating  |
+| ---------- | ------ | ------- |
+| int        | int    | boolean |
+
 ## Comments table
 
 | TasksId | UserId | Comment |
@@ -22,12 +28,12 @@ The tables we will use to build the database
 
 ## Resources table
 
-| id  | resource | TaskId |
-| --- | -------- | ------ |
-| int | string   | int    |
+| id  | resource |
+| --- | -------- |
+| int | string   |
 
 ## Tasks table
 
-| Id  | Task | Week | Day    |
-| --- | ---- | ---- | ------ |
-| int | int  | int  | string |
+| Id  | Task   | Week | Day | resource_id |
+| --- | ------ | ---- | --- | ----------- |
+| int | string | int  | int | string      |
