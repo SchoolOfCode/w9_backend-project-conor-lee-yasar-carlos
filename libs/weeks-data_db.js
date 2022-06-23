@@ -4,19 +4,19 @@ const db_weeks = {
       day: 1,
       resources: [
         {
-          id: 301,
+          taskId: 1,
           topic: 'HTML basics',
           url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU'
         
         },
         {
-          id: 3301,
+          taskId: 2,
           topic: 'HTML elements',
           url: 'https://www.w3schools.com/html/html_elements.asp'
         
         },
         {
-          id: 3401,
+          taskId: 3,
           topic: 'HTML classes',
           url: 'https://www.w3schools.com/html/html_elements.asp'
         
@@ -24,19 +24,19 @@ const db_weeks = {
       ],
       list: [
         {
-          id: 101,
+          id: 1,
           topic: 'HTML elements and attributes'
        },
        {
-        id: 1012,
+        id: 2,
         topic: 'HTML classes and ids'
      },
      {
-      id: 1013,
+      id: 3,
       topic: 'HTML styles'
    },
    {
-    id: 1014,
+    id: 3,
     topic: 'HTML links'
  }
       ]
@@ -45,17 +45,17 @@ const db_weeks = {
       day: 2,
       resources: [
         {
-          id: 702,
+          taskId: 5,
           topic: 'CSS basics',
           url: 'https://www.youtube.com/watch?v=1PnVor36_40'
         },
         {
-          id: 7102,
+          taskId: 7,
           topic: 'CSS syntax',
           url: 'https://www.w3schools.com/css/css_syntax.asp'
         },
         {
-          id: 7202,
+          taskId: 18,
           topic: 'CSS borders and margins',
           url: 'https://www.w3schools.com/css/css_border.asp'
         }
@@ -87,17 +87,17 @@ const db_weeks = {
       day: 3,
       resources: [
         {
-          id: 803,
+          taskId: 6,
           topic: 'Javascript intro',
           url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s'
         },
         {
-          id: 8103,
+          taskId: 9,
           topic: 'Javascript data types',
           url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures'
         },
         {
-          id: 8203,
+          taskId: 10,
           topic: 'Javascript variables',
           url: 'https://www.w3schools.com/js/js_variables.asp'
         }
@@ -125,21 +125,21 @@ const db_weeks = {
       day: 4,
       resources: [
         {
-          id: 904,
+          taskId: 10,
           topic: 'javascript intro part 2',
           url: 'https://www.youtube.com/watch?v=W6NZfCO5SIk&t=374s',
           rating: false
         
         },
         {
-          id: 9104,
+          taskId: 12,
           topic: 'loops and if statements',
           url: 'https://www.youtube.com/watch?v=s9wW2PpJsmQ',
           rating: true
         
         },
         {
-          id: 9204,
+          taskId: 13,
           topic: 'javascript modules',
           url: 'https://www.youtube.com/watch?v=cRHQNNcYf6s',
           rating: true
@@ -173,17 +173,17 @@ const db_weeks = {
       day: 5,
       resources: [
         {
-          id: 205,
+          taskId: 15,
           topic: 'javascript continued',
           url: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch'
         },
         {
-          id: 2105,
+          taskId: 13,
           topic: 'javascript classes',
           url: 'https://www.w3schools.com/js/js_classes.asp'
         },
         {
-          id: 2205,
+          taskId: 19,
           topic: 'javascript styling guide',
           url: 'https://enlear.academy/5-best-javascript-style-guides-640485e7b630'
         }
@@ -217,19 +217,19 @@ const db_weeks = {
       day: 1,
       resources: [
         {
-          id: 5406,
+          taskId: 21,
           topic: 'intro to node',
           url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s'
         
         },
         {
-          id: 5506,
+          taskId: 20,
           topic: 'http modules',
           url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4&t=8s'
         
         },
         {
-          id: 5606,
+          taskId: 22,
           topic: 'node file systems',
           url: 'https://www.youtube.com/watch?v=QkwHP4d01xA'
         
@@ -262,17 +262,17 @@ const db_weeks = {
       day: 2,
       resources: [
         {
-          id: 6507,
+          taskId: 24,
           topic: 'express',
           url: 'https://www.section.io/engineering-education/express/'
         },
         {
-          id: 6607,
+          taskId: 25,
           topic: 'request handlers',
           url: 'https://codeforgeek.com/handle-get-post-request-express-4/'
         },
         {
-          id: 6707,
+          taskId: 27,
           topic: 'postgres',
           url: 'https://www.youtube.com/watch?v=fZQI7nBu32M&t=348s'
         }
@@ -289,17 +289,17 @@ const db_weeks = {
       day: 3,
       resources: [
         {
-          id: 508,
+          taskId: 26,
           topic: 'databases',
           url: 'https://www.youtube.com/watch?v=z2kbsG8zsLM'
         },
         {
-          id: 5108,
+          taskId: 29,
           topic: 'create table',
           url: 'https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/'
         },
         {
-          id: 5208,
+          taskId: 30,
           topic: 'alter table',
           url: 'https://www.postgresql.org/docs/current/sql-altertable.html'
         }
@@ -336,12 +336,12 @@ const db_weeks = {
       day: 4,
       resources: [
         {
-          id: 409,
+          taskId: 31,
           topic: 'Heroku',
           url: 'https://www.youtube.com/watch?v=QTOkqzCTGxw'
         },
         {
-          id: 4109,
+          taskId: 32,
           topic: 'relational databases',
           url: 'https://www.youtube.com/watch?v=OqjJjpjDRLc'
         }
@@ -368,17 +368,17 @@ const db_weeks = {
       day: 5,
       resources: [
         {
-          id: 201,
+          taskId: 35,
           topic: 'Restful Apis',
           url: 'https://www.youtube.com/watch?v=lsMQRaeKNDk'
         },
         {
-          id: 2101,
+          taskId: 33,
           topic: 'CRUD operations',
           url: 'https://www.youtube.com/watch?v=3isdcAEZoq0'
         },
         {
-          id: 2201,
+          taskId: 35,
           topic: 'RESTful methods',
           url: 'https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/prest/rest_api_methods.html'
         }
