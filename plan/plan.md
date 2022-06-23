@@ -97,38 +97,40 @@ The plan to create the backend.
   - setup the pool to communicate with database ✅
   - prepare query from pool ✅
   - export query ✅
-- Create `scripts` folder
-  - create `createTables.js` file
-    - import query made for pool
-    - prepare sql queries to create the following tables (see database-table-structure.md)
-      - TaskUser
-      - ResourceUser
-      - Comments
-      - Users
-      - Resources
-      - Tasks
-    - add function or functions to query database with each table creation
-  - create `populateTables.js` file
-    - import query made for pool
-    - import the libs file `weeks-data_db.js`
-    - prepare sql query to populate tables
-    - add function to query and populate the database
-  - add scripts to `package.json`
-    - "db:createTables": "npm -r dotenv/config ./db/scripts/createTables.js",
-    - "db:populateTables": "npm -r dotenv/config ./db/scripts/populateTables.js"
+- Create `scripts` folder ✅
+  - create `createTables.js` file ✅
+    - import query made for pool ✅
+    - prepare sql queries to create the following tables (see database-table-structure.md) ✅
+      - TaskUser ✅
+      - ResourceUser ✅
+      - Comments ✅
+      - Users ✅
+      - Resources ✅
+      - Tasks ✅
+    - add function or functions to query database with each table creation ✅
+  - create `populateTables.js` file ✅
+    - import query made for pool ✅
+    - import the libs file `weeks-data_db.js` ✅
+    - prepare sql query to populate tables ✅
+    - add function to query and populate the database ✅
+  - add scripts to `package.json` ✅
+    - "db:createTables": "npm -r dotenv/config ./db/scripts/createTables.js", ✅
+    - "db:populateTables": "npm -r dotenv/config ./db/scripts/populateTables.js" ✅
+  - Create the database tables ✅
+  - Populate the database with dummy data ✅
 
 ## Update models to use SQL queries and communicate with DB
 
 - import query setup with pool
 - GET request to get all the days in said week for said user with SQL
 - POST request to create task comment for said week, day and user with SQL
-- PATCH request to update task comment for said week, day and user with SQL
-- PATCH request to update the task metadata for said task and user with SQL
-- PATCH request to update the resouces metadata for said resource and user with SQL
 
 ## STRETCH GOALS IF WE HAVE TIME
 
 _Add DELETE and PATCH_
 
+- PATCH request to update task comment for said week, day and user with SQL
+- PATCH request to update the task metadata for said task and user with SQL
+- PATCH request to update the resouces metadata for said resource and user with SQL
 - listen for DELETE request with `/:userID/:weekID/:day/comment/:taskID`
 - create and return response object with all the placeholders to make sure it is working
