@@ -25,3 +25,5 @@ app.use('/api/v1', organiserRouter);
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);
 });
+
+export default app;
