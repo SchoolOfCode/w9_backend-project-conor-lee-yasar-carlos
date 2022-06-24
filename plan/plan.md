@@ -23,12 +23,16 @@ The plan to create the backend.
 
 ## Setup local libs file
 
+---
+
 `/libs/weeks-data.js` to serve dummy data to:
 
 - populate localhost ✅
 - populate heroku ✅
 
 ## Basic setup
+
+---
 
 - initiate npm ✅
 - install express ✅
@@ -45,6 +49,8 @@ The plan to create the backend.
   - setup GET listener to catch request to base url '/' and respond with basic object ✅
 
 ## Create routes
+
+---
 
 - create `routes` folder ✅
   - create the `organiser-api.js` file ✅
@@ -67,6 +73,8 @@ The plan to create the backend.
 
 ## Create models
 
+---
+
 - create `models` folder ✅
   - create the `organiser-api.js` file ✅
     - import the libs ✅
@@ -81,6 +89,8 @@ The plan to create the backend.
   - PATCH to update the resources metadata ✅
 
 ## Prepare backend to populate heroku
+
+---
 
 - install npm package `pg` ✅
 - install npm package `cors` ✅
@@ -119,16 +129,26 @@ The plan to create the backend.
   - Create the database tables ✅
   - Populate the database with dummy data ✅
 
-## Update models to use SQL queries and communicate with DB
+## Update models to use SQL queries
+
+---
 
 - import query setup with pool
 - GET request to get all the days in said week for said user with SQL
+
+## Testing the api
+
+---
+
+- Smoke test GET request returns the right data structure ✅
+
+## STRETCH GOALS
+
+---
+
+_Add POST, DELETE and PATCH_
+
 - POST request to create task comment for said week, day and user with SQL
-
-## STRETCH GOALS IF WE HAVE TIME
-
-_Add DELETE and PATCH_
-
 - PATCH request to update task comment for said week, day and user with SQL
 - PATCH request to update the task metadata for said task and user with SQL
 - PATCH request to update the resouces metadata for said resource and user with SQL
