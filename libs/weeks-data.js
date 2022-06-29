@@ -8,7 +8,7 @@ const weeks = {
             topic: 'HTML basics',
             url: 'https://www.youtube.com/watch?v=qz0aGYrrlhU',
             rating: false
-          
+            
           },
           {
             id: 3301,
@@ -31,28 +31,32 @@ const weeks = {
             topic: 'HTML elements and attributes ',
             weekend:false,
             completed: false,
-            rating: 0
+            rating: 0,
+            comments: '',
          },
          {
           id: 1012,
           topic: 'HTML classes and ids',
           weekend: false,
           completed: false,
-          rating: 0
+          rating: 0,
+          comments: ''
        },
        {
         id: 1013,
         topic: 'HTML, styles',
         weekend: false,
         completed: false,
-        rating: 0
+        rating: 0,
+        comments: ''
      },
      {
       id: 1014,
       topic: 'HTML, links',
       weekend: false,
       completed: false,
-      rating: 0
+      rating: 0,
+      comments: ''
    }
         ]
       },
@@ -87,7 +91,8 @@ const weeks = {
             topic: 'CSS syntax and selectors',
             weekend: false,
             completed: false,
-            rating: 0
+            rating: 0,
+            comments: ''
             
           },
           {
@@ -95,7 +100,8 @@ const weeks = {
             topic: 'backgrounds, borders and margins',
             weekend: false,
             completed: false,
-            rating: 0
+            rating: 0,
+            comments: ''
             
           },
           {
@@ -103,7 +109,8 @@ const weeks = {
             topic: 'CSS selectors',
             weekend: false,
             completed: false,
-            rating: 0
+            rating: 0,
+            comments: ''
             
           },
           {
@@ -111,7 +118,8 @@ const weeks = {
             topic: 'CSS fonts and icons',
             weekend: false,
             completed: false,
-            rating: 0
+            rating: 0,
+            comments: ''
             
           }
         ]
@@ -203,7 +211,7 @@ const weeks = {
             weekend:false,
             completed:false,
             rating: 0,
-            
+            comments: ''
           },
           {
             id: 1042,
@@ -211,7 +219,7 @@ const weeks = {
             weekend:false,
             completed: false,
             rating: 0,
-            
+            comments: ''
           },
           {
             id: 1043,
@@ -219,7 +227,7 @@ const weeks = {
             weekend:false,
             completed: false,
             rating: 0,
-            
+            comments: ''
           },
           {
             id: 1044,
@@ -227,7 +235,7 @@ const weeks = {
             weekend:false,
             completed: false,
             rating: 0,
-            
+            comments: ''
           }
         ]
       },
@@ -263,7 +271,7 @@ const weeks = {
             weekend:false,
             completed: false,
             rating: 0,
-            
+            comments: ''
           },
           {
             id: 1052,
@@ -272,7 +280,6 @@ const weeks = {
             completed: false,
             rating: 0,
             comments:"I would have prefered a practical"
-            
           },
           {
             id: 1053,
@@ -281,7 +288,6 @@ const weeks = {
             completed: false,
             rating: 0,
             comments:"I would have prefered a practical"
-            
           },
           {
             id: 1054,
@@ -290,7 +296,6 @@ const weeks = {
             completed: false,
             rating: 0,
             comments:"I would have prefered a practical"
-            
           }
         ]
       },
