@@ -1,3 +1,4 @@
+import { response } from 'express';
 import request from 'supertest';
 import app from '../app.js';
 
@@ -83,3 +84,43 @@ describe(`GET requests to the API behave as they should`, () => {
   });
   
 });
+
+// POST testing
+describe(`POST requests`, () => {
+  // push for failure
+  it(`Responds with error object`, async () => {
+    // ARRANGE
+    const data = {
+      comment: 'Comment will not be added'
+    }
+    const resObject = {
+      payload: 'Unable to add comment'
+    }
+    // ACT / ASSERT
+    await request(app)
+      .post(`${apiURL}/1/comment/425`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeFalsy();
+        expect(response.body.payload).toBe(resObject.payload);
+      })
+  });
+
+  // now confirm comment addition
+  it(`Responds with comment and success object`, async () => {
+    // ARRANGE
+    const data = {
+      comment: 'This will be added to the task'
+    }
+    // ACT / ASSERT
+    await request(app)
+      .post(`${apiURL}/1/comment/101`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeTruthy();
+        expect(response.body.payload).toBe(data.comment);
+      })
+  });
+})

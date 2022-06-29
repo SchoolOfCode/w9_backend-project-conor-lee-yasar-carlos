@@ -29,7 +29,7 @@ organiserRouter.post('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
   if (response.success) {
     res.json({
       success: true,
-      payload: 'Comment successfully added'
+      payload: response.comment
     });
   }else{
     res.json({

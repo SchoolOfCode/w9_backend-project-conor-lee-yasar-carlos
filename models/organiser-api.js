@@ -13,15 +13,13 @@ export function createTaskComment({userID, weekID, day, taskID, comment}) {
   taskID = Number(taskID);
 
   weeks[`week${weekID}`][day - 1].list.forEach(task => {
-    
-    
     if (task.id === taskID) {
       task.comments = comment;
       updated = true;
     }
   });
 
-  return { success: updated };
+  return { success: updated, comment: comment };
 }
 
 // PATCH: update task comment
