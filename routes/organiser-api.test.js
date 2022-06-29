@@ -3,6 +3,7 @@ import app from '../app.js';
 
 const apiURL = '/api/v1/user/1';
 
+// All GET testing
 describe(`GET requests to the API behave as they should`, () => {
   // smoke test for response object
   it(`Successful request returns an array of objects`, async () => {

@@ -21,7 +21,7 @@ organiserRouter.get('/:userID/:weekID', (req, res) => {
 });
 
 // listen for post requests
-organiserRouter.post('/:userID/:weekID/:day/resource/:resourceID', (req, res) => {
+organiserRouter.post('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
   // object with success response
   const response = createTaskComment({...req.params, ...req.body});
   
