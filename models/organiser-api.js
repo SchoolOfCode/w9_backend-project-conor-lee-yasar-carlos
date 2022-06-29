@@ -44,6 +44,7 @@ export function updateTaskMeta({userId, weekID, day, taskID, weekend, completed,
   // tracks if comment was updated
   let updated = false;
   taskID = Number(taskID);
+  let payload = {};
 
   // loop through tasks to find the matching task
   weeks[`week${weekID}`][Number(day) - 1].list.forEach(task => {
@@ -52,10 +53,14 @@ export function updateTaskMeta({userId, weekID, day, taskID, weekend, completed,
       task.completed = completed;
       task.rating = Number(rating);
       updated = true;
+      // Temporary data until we connect to the Heroku DB
+      payload.weekend = weekend;
+      payload.completed = completed;
+      payload.rating = Number(rating);
     }
   });
 
-  return { success: updated };
+  return { success: updated, payload: payload };
 }
 
 // PATCH: update task metadata

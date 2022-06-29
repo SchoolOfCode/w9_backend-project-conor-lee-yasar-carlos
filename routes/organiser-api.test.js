@@ -118,7 +118,6 @@ describe(`POST requests`, () => {
       .post(`${apiURL}/1/comment/101`)
       .send(data)
       .then(async response => {
-        console.log(response.body)
         // check structure of response object
         expect(response.body.success).toBeTruthy();
         expect(response.body.payload).toBe(data.comment);
@@ -161,6 +160,58 @@ describe(`PATCH for comment`, () => {
         // check structure of response object
         expect(response.body.success).toBeTruthy();
         expect(response.body.payload).toBe(data.comment);
+      })
+  });
+});
+
+
+// Patch tests the task metadata which involved updating the weekend, completed, rating
+describe(`PATCH task metadata. weekend, completed, rating`, () => {
+  // lets flop the tast metadata patch
+  it(`Task metadata responds with error object`, async () => {
+    // ARRANGE
+    const data = {
+      rating: 2,
+      weekend: true,
+      completed: false,
+    }
+    const resObject = {
+      payload: 'Unable to update the task metadata'
+    }
+    // ACT / ASSERT
+    await request(app)
+      .patch(`${apiURL}/1/task/1987`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeFalsy();
+        expect(response.body.payload).toBe(resObject.payload);
+      });
+  })
+  // now for successful response
+  it(`Task metadata responds with success`, async () => {
+    // ARRANGE
+    const data = {
+      rating: 5,
+      weekend: false,
+      completed: false,
+    }
+    const expected = {
+      rating: expect.any(Number),
+      weekend: expect.any(Boolean),
+      completed: expect.any(Boolean)
+    }
+    // ACT / ASSERT
+    await request(app)
+      .patch(`${apiURL}/1/task/101`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeTruthy();
+        expect(response.body.payload).toEqual(expected);
+        expect(response.body.payload.rating).toEqual(expected.rating);
+        expect(response.body.payload.weekend).toEqual(expected.weekend);
+        expect(response.body.payload.completed).toEqual(expected.completed);
       })
   });
 });

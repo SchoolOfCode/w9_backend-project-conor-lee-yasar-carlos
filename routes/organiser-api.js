@@ -67,8 +67,8 @@ organiserRouter.patch('/:userID/:weekID/:day/task/:taskID', (req, res) => {
   // let end user know the sucess of update the task meta
   if (response.success) {
     res.json({
-      sucess: true,
-      payload: 'Task metadata updated successfully'
+      success: true,
+      payload: response.payload
     });
   }else{
     res.json({
@@ -86,7 +86,7 @@ organiserRouter.patch('/:userID/:weekID/:day/resource/:resourceID', (req, res) =
   // let end user know the sucess of update the task meta
   if (response.success) {
     res.json({
-      sucess: true,
+      success: true,
       payload: 'Resource metadata updated successfully'
     });
   }else{
