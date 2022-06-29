@@ -118,9 +118,49 @@ describe(`POST requests`, () => {
       .post(`${apiURL}/1/comment/101`)
       .send(data)
       .then(async response => {
+        console.log(response.body)
         // check structure of response object
         expect(response.body.success).toBeTruthy();
         expect(response.body.payload).toBe(data.comment);
       })
   });
 })
+
+// Patch tests the ammendment of task comments
+describe(`PATCH for comment`, () => {
+  // lets flop the comment patch
+  it(`Comment responds with error object`, async () => {
+    // ARRANGE
+    const data = {
+      message: 'This message will fail and not be added to task'
+    }
+    const resObject = {
+      payload: 'Unable to update the task comment'
+    }
+    // ACT / ASSERT
+    await request(app)
+      .patch(`${apiURL}/1/comment/1699`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeFalsy();
+        expect(response.body.payload).toBe(resObject.payload);
+      })
+  })
+  // now for successful response
+  it(`Comment responds with success`, async () => {
+    // ARRANGE
+    const data = {
+      comment: 'Why you have to have such a great taste in music'
+    }
+    // ACT / ASSERT
+    await request(app)
+      .patch(`${apiURL}/1/comment/101`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeTruthy();
+        expect(response.body.payload).toBe(data.comment);
+      })
+  });
+});

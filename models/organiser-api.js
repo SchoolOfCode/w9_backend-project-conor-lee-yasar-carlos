@@ -36,7 +36,7 @@ export function updateTaskComment({userID, weekID, day, taskID, comment}) {
     }
   });
 
-  return { success: updated };
+  return { success: updated, comment: comment };
 }
 
 // PATCH: update task metadata

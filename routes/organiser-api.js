@@ -48,8 +48,8 @@ organiserRouter.patch('/:userID/:weekID/:day/comment/:taskID', (req, res) => {
   // let the end user know the sucess of the patch
   if (response.success) {
     res.json({
-      sucess: true,
-      payload: 'Comment sucessfully updated'
+      success: true,
+      payload: response.comment
     });
   }else{
     res.json({
