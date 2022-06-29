@@ -1,3 +1,10 @@
+// Dummy data used by the frontend while we setup the connection with the database
+// It is an object, with 'week<N>' propeties which themeselves are arrays of objects
+// week = {
+//  week<N>: [
+//    {day, resources: [{}], list[{}]}, ...
+//  ]
+// }
 const weeks = {
     week1: [
       {

@@ -1,3 +1,5 @@
+// Dummy data used to populate the database.
+// For full reference see week-data_db.js
 const db_weeks = {
   week1: [
     {
