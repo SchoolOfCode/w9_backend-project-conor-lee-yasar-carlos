@@ -68,14 +68,17 @@ export function updateResourceMeta({userID, weekID, day, resourceID, rating}) {
   // tracks if comment was updated
   let updated = false;
   resourceID = Number(resourceID);
+  let payload = {}
 
   // loop through tasks to find the matching task
   weeks[`week${weekID}`][Number(day) - 1].resources.forEach(resource => {
     if (resource.id === resourceID) {
       resource.rating = rating;
       updated = true;
+      // Temporary data until we connect to Heroku DB
+      payload.rating = rating;
     }
   });
 
-  return { success: updated };
+  return { success: updated, payload: payload };
 }

@@ -215,3 +215,46 @@ describe(`PATCH task metadata. weekend, completed, rating`, () => {
       })
   });
 });
+
+// Patch tests the resources metadata which updates rating
+describe(`PATCH resource metadata. rating`, () => {
+  // lets flop the tast metadata patch
+  it(`Resource metadata responds with error object`, async () => {
+    // ARRANGE
+    const data = {
+      rating: true,
+    }
+    const resObject = {
+      payload: 'Unable to update the resource metadata'
+    }
+    // ACT / ASSERT
+    await request(app)
+      .patch(`${apiURL}/1/resource/1988`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeFalsy();
+        expect(response.body.payload).toBe(resObject.payload);
+      });
+  })
+  // now for successful response
+  it(`Resource metadata responds with success`, async () => {
+    // ARRANGE
+    const data = {
+      rating: false,
+    }
+    const expected = {
+      rating: expect.any(Boolean),
+    }
+    // ACT / ASSERT
+    await request(app)
+      .patch(`${apiURL}/1/resource/301`)
+      .send(data)
+      .then(async response => {
+        // check structure of response object
+        expect(response.body.success).toBeTruthy();
+        expect(response.body.payload).toEqual(expected);
+        expect(response.body.payload.rating).toEqual(expected.rating);
+      })
+  });
+});

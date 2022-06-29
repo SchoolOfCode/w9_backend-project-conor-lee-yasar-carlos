@@ -87,7 +87,7 @@ organiserRouter.patch('/:userID/:weekID/:day/resource/:resourceID', (req, res) =
   if (response.success) {
     res.json({
       success: true,
-      payload: 'Resource metadata updated successfully'
+      payload: response.payload
     });
   }else{
     res.json({
